@@ -12,26 +12,36 @@ font-family: 'Merriweather', serif;
 background-color: #F2F1E8;
 margin: 0 auto;
 text-align: center;
+color: #131511;
 
 
 }
 
 nav {
     background-color: #FFFFFF;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-basis: 100%;
-    justify-content: center;
-}
+    justify-content: space-between;
+  }
+
+  #id {
+    display: flex;
+    flex-shrink: 30%;
+  }
 
 nav a{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 30px;
+  padding-top: 15px;
   margin-left: 30px;
   margin-right: 30px;
   color: #2B2F26;
+  display:flex;
+  justify-content: center;
 }
 
   a:hover {
@@ -43,7 +53,7 @@ nav a{
 
   }
 
-
+/*ABOUT PAGE*/
 
 .title{
   text-align: center;
@@ -97,8 +107,7 @@ div #image2 {
   background-color: #2B2F26;
   color: #F2F1E8;
   padding: 50px;
-  width: 50px;
-  height: 25px;
+  box-sizing: content-box;
   text-align: center;
   position: relative;
   top: -210px;
@@ -129,7 +138,56 @@ div #image2 {
 }
 */
 
+/* NEWSLETTER PAGE */
 
+#newsletter {
+  background-image: url("./images/optimized/background-2.jpg");
+
+
+}
+
+form {
+  background-color:white;
+  width: 800px;
+  height: 300px;
+  padding: 50px 10px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display:flex;
+  flex-direction: column;
+}
+
+  input {
+    border: none;
+    border-bottom: 1px solid #968772;
+  }
+
+
+
+label {
+  font-family: 'Roboto', sans-serif;
+  color: #968772;
+  font-size: 24px;
+
+
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #968772;
+  background-color:#968772;
+  color:#F2F1E8;
+  padding: 12px 24px;
+  font-size: 18px;
+  box-sizing: content-box;
+
+  }
+
+button:hover {
+  background-color: #967343;
+  color: #FFFFFF;
+}
 
 
 footer {
@@ -137,11 +195,75 @@ footer {
   border: 1px solid #2B2F26;
   color: #F2F1E8;
   text-align: left;
-  padding: 40px 0 40px 30px;
+  padding: 10px 0 0 20px;
+  display: flex;
+  flex-basis: 100%;
+}
+
+/* ABOUT PAGE*/
+
+#about_page {
+  text-align: left;
 
 
 }
 
+#about_page > section {
+  margin: 0 65px;
+
+}
+
+#about_page > h1, h2 {
+  text-align: center;
+}
+
+#about_page > h2 {
+  background-color: #32411A;
+  background-image: url("./images/optimized/background-3.jpg");
+  background-size: cover;
+  color: #F2F1E8;
+  padding: 90px 0;
+  font-size: 36px;
+}
+
+#birdhouse {
+  width: 100px;
+  height: 80px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#facilities_pic > p {
+  float: left;
+}
+
+#facilities_pic {
+  width: 100px;
+  height: 80px;
+
+}
+table, tr, td, th{
+  border:1px solid #131511;
+  border-collapse: collapse;
+  box-sizing: content-box;
+}
+
+table{
+  margin-bottom: 50px;
+  }
+tr:nth-child(even) {
+  background: #F2EADC}
+
+tr:nth-child(odd) {
+  background: #F2F1E8}
+
+th{
+  text-align: center;
+}
+
+th, tr, td {
+  padding: 10px 5px;
+}
 /*
 Colors:
 Background: #F2F1E8
