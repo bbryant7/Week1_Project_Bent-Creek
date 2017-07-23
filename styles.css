@@ -278,17 +278,23 @@ p a:hover {
 }
 
 
-#facilities > p {
-  float: left;
-}
-
 #facilities_pic {
   width: 100px;
   height: 80px;
+  padding-left: 15px;
+  padding-top: 16px
 }
-#facilities > p {
-  float: left;
+
+#facilities {
+  display: flex;
+  flex-direction: row;
 }
+
+#sub-text {
+  font-size: 8px;
+  padding-left: 15px;
+}
+
 
 table, tr, td, th{
   border:1px solid #131511;
