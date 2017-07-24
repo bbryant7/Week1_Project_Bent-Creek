@@ -21,7 +21,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    flex-basis: 100%;
+    /*flex-basis: 100%;*/
     flex-direction: row;
     j
 
@@ -75,17 +75,27 @@ nav a {
   font-size: 42px;
 }
 
+main {
+  flex-shrink: 0.5;
+}
 .images {
 
-  margin: auto;
+  /*margin: 0 500px 0 500px;*/
+
+
 }
 
 #row1 {
   display: flex;
   flex-basis: 100%;
   flex-direction:row;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  height: 600px;
+  margin-left: 15px;
+  margin-right:15px;
+  margin-bottom: 20px;
+
+
 
 }
 
@@ -93,50 +103,64 @@ nav a {
   display: flex;
   flex-basis: 100%;
   flex-direction:row;
-  justify-content: space-between;
-  margin: 10px, 10px;
-  width: 100%;
+  justify-content: center;
+  height: 450px;
+  margin-right:15px;
+  margin-bottom: 20px;
+
 
 }
 
 #picture1 {
-  height: 70%;
-  width: 100%;
+  background-image: url("./images/optimized/product-1.jpg");
+  flex-basis: 57%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
 
 }
 
-/*
- #picture1 {
-   display: flex;
-  flex-basis:60%;
-  flex-shrink: .1;
-  */
-
-
 #picture2 {
-  height: 70%;
-  width: 89%;
+  background-image: url("./images/optimized/product-2.jpg");
+  flex-basis: 18%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
 
 }
 #picture3 {
-  height: 70%;
-  width: 55%;
+  background-image: url("./images/optimized/product-3.jpg");
+  flex-basis: 18%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
 }
 #picture4 {
-  height: 80%;
-  width: 80%;
+  background-image: url("./images/optimized/product-4.jpg");
+  flex-basis: 18%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
 }
 #picture5{
-  height: 80%;
-  width: 70%;
+  background-image: url("./images/optimized/product-5.jpg");
+  flex-basis: 18%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
 }
 #picture6 {
-  height: 80%;
-  width: 70%;
+  background-image: url("./images/optimized/product-6.jpg");
+  flex-basis: 38%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
 }
 #picture7 {
-  height: 80%;
-  width: 70%;
+  background-image: url("./images/optimized/product-7.jpg");
+  flex-basis: 18%;
+  background-position: center;
+  background-size: cover;
 }
 
 .images {
@@ -149,10 +173,7 @@ nav a {
   padding: 5px;
   box-sizing: content-box;
   text-align: center;
-  position: relative;
-  top: -60px;
-  display: inline-block;
-  align-self: left;
+
 
 }
 
@@ -163,7 +184,7 @@ nav a {
 
   background-image: url("./images/optimized/background-2.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
 
 }
