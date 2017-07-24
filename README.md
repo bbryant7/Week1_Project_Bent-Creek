@@ -10,16 +10,8 @@
 
 To Do:
 General - fix nav links to center
-ABOUT
--link color
--extend footer
--spacing between sections
-- bold on titles
-- float facilities image and caption
 newsletter
-- add background image
-- delete footer
-- center form box
-- fix form lines
-Index
-- 
+- stretch image
+INDEX
+- size images, spacing
+-push captions to the right
