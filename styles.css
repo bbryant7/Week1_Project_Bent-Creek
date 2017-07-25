@@ -13,6 +13,7 @@ margin: 0 auto;
 text-align: center;
 color: #131511;
 
+  /*margin: 0 500px 0 500px;*/
 
 }
 
@@ -23,7 +24,11 @@ nav {
     display: flex;
     /*flex-basis: 100%;*/
     flex-direction: row;
-    j
+    /*position: fixed;
+    /*top: 0;
+    right: 0;
+    left: 0;*/
+
 
   }
 
@@ -66,18 +71,31 @@ nav a {
     padding: 10px 0 0 20px;
     display: flex;
     flex-basis: 100%;
+    margin-bottom: 0;
   }
 
 /*INDEX PAGE*/
 
 .title{
   text-align: center;
-  font-size: 42px;
+  font-size: 36px;
+  margin-bottom: 0;
+
+}
+
+.title h1 {
+    margin-bottom: 0;
+}
+.title h3 {
+    margin-top: 0;
 }
 
 .images {
 
-  /*margin: 0 500px 0 500px;*/
+  margin: 0 150px;
+  height: 600px;
+  margin-bottom: 50px;
+
 
 
 }
@@ -87,7 +105,7 @@ nav a {
   flex-basis: 100%;
   flex-direction:row;
   justify-content: center;
-  height: 600px;
+  height: 60%;
   margin-left: 15px;
   margin-right:15px;
   margin-bottom: 20px;
@@ -101,7 +119,7 @@ nav a {
   flex-basis: 100%;
   flex-direction:row;
   justify-content: center;
-  height: 450px;
+  height: 40%;
   margin-right:15px;
   margin-bottom: 20px;
 
@@ -117,9 +135,9 @@ nav a {
   flex-direction: column;
 
 }
-#picture1 p {
+/*#picture1 p {
   width: 250px;
-}
+}*/
 
 #picture2 {
   background-image: url("./images/optimized/product-2.jpg");
@@ -131,9 +149,9 @@ nav a {
 }
 
 
-#picture2 p {
+/*#picture2 p {
   width: 50px;
-}
+}*/
 
 #picture3 {
   background-image: url("./images/optimized/product-3.jpg");
@@ -143,9 +161,9 @@ nav a {
   background-size: cover;
 }
 
-#picture3 p {
+/*#picture3 p {
   width: 100px;
-}
+}*/
 #picture4 {
   background-image: url("./images/optimized/product-4.jpg");
   flex-basis: 18%;
@@ -154,9 +172,9 @@ nav a {
   background-size: cover;
 }
 
-#picture4 p {
+/*#picture4 p {
   width: 140px;
-}
+}*/
 
 #picture5{
   background-image: url("./images/optimized/product-5.jpg");
@@ -166,72 +184,75 @@ nav a {
   background-size: cover;
 }
 
-#picture5 p {
+/*#picture5 p {
   width: 250px;
-}
+}*/
 #picture6 {
   background-image: url("./images/optimized/product-6.jpg");
-  flex-basis: 37.5%;
+  flex-basis: 37%;
   margin-right: 20px;
   background-position: center;
   background-size: cover;
 }
-#picture6 p {
+/*#picture6 p {
   width: 230px;
-}
+}*/
 #picture7 {
   background-image: url("./images/optimized/product-7.jpg");
   flex-basis: 18%;
   background-position: center;
   background-size: cover;
 }
-#picture7 p {
+/*#picture7 p {
   width: 245px;
-}
+}*/
 
-.images {
-  margin: 0;
-}
+
 .images p {
   border: 1px solid #2B2F26;
   background-color: #2B2F26;
   color: #F2F1E8;
-  font-size: 24px;
-  padding: 20px;
+  font-size: 18px;
+  /*padding: 20px;
   position: relative;
-  top: 330px;
+  top: 330px;*/
 }
   /*box-sizing: content-box;
   text-align: center;*/
-.images #row1 p {
+/*.images #row1 p {
   position: relative;
   top: 470px;
-}
+}*/
 
 
 
 /* NEWSLETTER PAGE */
 
-#Newsletter {
+#Newsletter-background {
 
 
   background-image: url("./images/optimized/background-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 900px;
+  display:flex;
+  align-items: center;
 
 }
 
 form {
   background-color:white;
-  padding: 50px 20px;
+  padding: 50px 50px;
   width: 45%;
   display: flex;
   flex-direction: column;
   align-content: center;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 150px;
+  
+
+
+
 
 
 
@@ -247,7 +268,7 @@ form h2 {
     margin-bottom:10px;
     height:20px;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: #968772;
     margin-bottom: 20px;
     outline:none;
@@ -297,11 +318,12 @@ form > h2 {
 #about_page {
   text-align: left;
   width: 100%;
+  font-size: 18px;
 
 }
 
 #about_page > section {
-  width: 65%;
+  width: 70%;
   margin: auto;
 
 }
@@ -321,15 +343,19 @@ p a:hover {
 #about_page > h2 {
   background-color: #32411A;
   background-image: url("./images/optimized/background-3.jpg");
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   color: #F2F1E8;
-  padding: 90px 0;
-  font-size: 36px;
+  padding: 100px 0;
+  font-size: 48px;
 }
 
 #birdhouse {
-  width: 100px;
-  height: 80px;
+  width: 120px;
+  height: 100px;
   float: left;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -343,8 +369,8 @@ p a:hover {
 
 
 #facilities_pic {
-  width: 100px;
-  height: 80px;
+  width: 140px;
+  height: 100px;
   padding-left: 15px;
   padding-top: 16px
 }
@@ -352,13 +378,22 @@ p a:hover {
 #facilities {
   display: flex;
   flex-direction: row;
+  position: relative;
+  top: -20px;
+
+}
+#facilities h3{
+  margin-bottom: 0;
 }
 
 #sub-text {
-  font-size: 8px;
+  font-size: 10px;
   padding-left: 15px;
 }
 
+#table h3 {
+  margin-top: 0;
+}
 
 table, tr, td, th{
   border:1px solid #131511;
