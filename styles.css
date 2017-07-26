@@ -5,8 +5,8 @@ background-color: #F2F1E8;
 margin: 0 auto;
 text-align: center;
 color: #131511;
-/*min-width: 600px;*/
-  /*margin: 0 500px 0 500px;*/
+min-width: 1000px;
+
 }
 
 footer {
@@ -25,20 +25,18 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    /*flex-basis: 100%;*/
     flex-direction: row;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    box-shadow: 0px 2px 15px #888888;
   }
 
   #logo {
     height: 40px;
     width: 35px;
     padding-left: 10px;
-
-
   }
 
 #navigation{
@@ -48,41 +46,40 @@ nav {
   display:flex;
   align-items: center;
   margin: auto;
-
-
 }
 
 nav a {
   padding-right: 70px;
 }
 
-  a:hover {
+a:hover {
     color: #CD5D67;
-  }
+}
 
-  a:active {
+a:active {
     color: #968772;
+}
 
-  }
-
-  header {
+header {
     margin-bottom: 100px;
-  }
+
+}
 
 /*________________INDEX PAGE____________*/
 
 .title{
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
   margin-bottom: 0;
-
 }
 
 .title h1 {
     margin-bottom: 0;
 }
+
 .title h3 {
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .images {
@@ -90,9 +87,6 @@ nav a {
   margin: 0 150px;
   height: 600px;
   margin-bottom: 50px;
-
-
-
 }
 
 #row1 {
@@ -104,7 +98,6 @@ nav a {
   margin-left: 15px;
   margin-right:15px;
   margin-bottom: 20px;
-
 }
 
 #row2 {
@@ -115,7 +108,6 @@ nav a {
   height: 40%;
   margin-right:15px;
   margin-bottom: 20px;
-
 }
 
 #picture1 {
@@ -125,7 +117,10 @@ nav a {
   background-position: center;
   background-size: cover;
   flex-direction: column;
+}
 
+#picture1 p {
+  width: 184px;
 }
 
 #picture2 {
@@ -134,13 +129,11 @@ nav a {
   margin-right: 20px;
   background-position: center;
   background-size: cover;
-
 }
 
-
-/*#picture2 p {
-  width: 50px;
-}*/
+#picture2 p {
+  width: 40px;
+}
 
 #picture3 {
   background-image: url("./images/optimized/product-3.jpg");
@@ -150,9 +143,10 @@ nav a {
   background-size: cover;
 }
 
-/*#picture3 p {
-  width: 100px;
-}*/
+#picture3 p {
+  width: 78px;
+}
+
 #picture4 {
   background-image: url("./images/optimized/product-4.jpg");
   flex-basis: 18%;
@@ -161,11 +155,11 @@ nav a {
   background-size: cover;
 }
 
-/*#picture4 p {
-  width: 140px;
-}*/
+#picture4 p {
+  width: 85px;
+}
 
-#picture5{
+#picture5 {
   background-image: url("./images/optimized/product-5.jpg");
   flex-basis: 18%;
   margin-right: 20px;
@@ -173,9 +167,10 @@ nav a {
   background-size: cover;
 }
 
-/*#picture5 p {
-  width: 250px;
-}*/
+#picture5 p {
+  width: 176px;
+}
+
 #picture6 {
   background-image: url("./images/optimized/product-6.jpg");
   flex-basis: 37%;
@@ -183,19 +178,21 @@ nav a {
   background-position: center;
   background-size: cover;
 }
-/*#picture6 p {
-  width: 230px;
-}*/
+
+#picture6 p {
+  width: 147px;
+}
+
 #picture7 {
   background-image: url("./images/optimized/product-7.jpg");
   flex-basis: 18%;
   background-position: center;
   background-size: cover;
 }
-/*#picture7 p {
-  width: 245px;
-}*/
 
+#picture7 p {
+  width: 181px;
+}
 
 .images p {
   border: 1px solid #2B2F26;
@@ -204,7 +201,7 @@ nav a {
   font-size: 18px;
   padding: 8px;
   position: relative;
-  top: 100px;
+  top: 170px;
   text-align: left;
 }
   /*box-sizing: content-box;
@@ -212,7 +209,7 @@ nav a {
 
 .images #row1 p {
   position: relative;
-  top: 470px;
+  top: 290px;
 }
 
 
@@ -220,8 +217,6 @@ nav a {
 /* ________NEWSLETTER PAGE_______ */
 
 #Newsletter-background {
-
-
   background-image: url("./images/optimized/background-2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -229,7 +224,6 @@ nav a {
   min-height: 100vh;
   display:flex;
   align-items: center;
-
 }
 
 form {
@@ -240,24 +234,22 @@ form {
   flex-direction: column;
   align-content: center;
   margin: auto;
-
 }
 
 form h2 {
   margin-top: 0;
 }
 
-  input {
-    border: none;
-    border-bottom: 2px solid #968772;
-    margin-bottom:10px;
-    height:20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #968772;
-    margin-bottom: 20px;
-    outline:none;
-
+input {
+  border: none;
+  border-bottom: 2px solid #968772;
+  margin-bottom:10px;
+  height:20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #968772;
+  margin-bottom: 20px;
+  outline:none;
   }
 
 label {
@@ -266,7 +258,6 @@ label {
   font-size: 24px;
   text-align: left;
   padding-top: 20px;
-
 }
 
 button {
@@ -282,7 +273,6 @@ button {
   width: 100px;
   align-self: center;
   outline:none;
-
   }
 
 button:hover {
@@ -294,19 +284,19 @@ form > h2 {
   margin-bottom: 25px;
 }
 
+
+
 /* ________ABOUT PAGE_____________*/
 
 #about_page {
   text-align: left;
   width: 100%;
   font-size: 18px;
-
 }
 
 #about_page > section {
   width: 70%;
   margin: auto;
-
 }
 
 p a {
@@ -348,7 +338,6 @@ p a:hover {
   font-style: italic;
 }
 
-
 #facilities_pic {
   width: 140px;
   height: 100px;
@@ -361,8 +350,8 @@ p a:hover {
   flex-direction: row;
   position: relative;
   top: -20px;
-
 }
+
 #facilities h3{
   margin-bottom: 0;
 }
@@ -376,20 +365,23 @@ p a:hover {
   margin-top: 0;
 }
 
-table, tr, td, th{
+table, tr, td, th {
   border:1px solid #131511;
   border-collapse: collapse;
   box-sizing: content-box;
 }
 
-table{
+table {
   margin-bottom: 50px;
   }
+
 tr:nth-child(even) {
-  background: #F2EADC}
+  background: #F2EADC
+}
 
 tr:nth-child(odd) {
-  background: #F2F1E8}
+  background: #F2F1E8
+}
 
 th{
   text-align: center;
